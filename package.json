@@ -1,0 +1,16 @@
+{
+  "name": "website-builder",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "concurrently -k -n api,web -c green,blue \"pnpm --filter api dev\" \"pnpm --filter web-frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "8.0.1"
+  }
+}
