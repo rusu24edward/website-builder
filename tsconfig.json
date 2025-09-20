@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@types/*": ["packages/types/*"]
+    }
+  },
+  "include": []
+}
